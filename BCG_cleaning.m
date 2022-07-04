@@ -1,4 +1,4 @@
-addpath 'C:\Users\JulioMedeiros\Desktop\Study1_EEG\eeglab14_1_2b'
+addpath ' '
 eeglab
 
 cd('C:\\Users\\JulioMedeiros\\Desktop\\analysis\\importfiles\\triggers\\GA\\1000QRS\\')
@@ -8,7 +8,7 @@ files=dir('*.set');
 % for i=1:length(files)
 for i=1:19
     filename=files(i).name;
-    EEG = pop_loadset('filename',filename,'filepath','C:\\Users\\JulioMedeiros\\Desktop\\analysis\\importfiles\\triggers\\GA\\1000QRS');
+    EEG = pop_loadset('filename',filename,'filepath',' ');
 %     ECG=EEG.data(64,:);
     
 %     pop_eegplot( EEG, 1, 0, 1, 10);
