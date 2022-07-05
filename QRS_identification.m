@@ -41,11 +41,10 @@ end
 
 %% 2nd method - R-peak detector based on the Pan & Tompkins algorithm
 
-% cd('C:\\Users\\JulioMedeiros\\Desktop\\analysis\\importfiles\\triggers\\GA\\')
 % 
-addpath('C:\Users\JulioMedeiros\Desktop\funcoes\ECG Adriana\ALG_FINAL_WELCOME_ADRIANA')
+addpath('')
 
-cd('C:\Users\JulioMedeiros\Desktop\analysis\importfiles\triggers\problemas\GA')
+cd('')
 path=pwd;
 
 files=dir('*.set');
