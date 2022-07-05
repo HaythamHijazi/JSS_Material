@@ -1,13 +1,10 @@
-% EEGLAB history file generated on the 17-Jun-2020
 % ------------------------------------------------
-%% 1st Method - fMRI tool
 clear all;
-addpath 'C:\Users\JulioMedeiros\Desktop\Study1_EEG\eeglab14_1_2b'
+addpath 
 
 eeglab
 
-cd('C:\\Users\\JulioMedeiros\\Desktop\\analysis\\importfiles\\triggers\\GA\\')
-% cd('C:\Users\JulioMedeiros\Desktop\analysis\importfiles\triggers\problemas\GA')
+
 path=pwd;
 
 files=dir('*.set');
@@ -86,7 +83,6 @@ for i=1:length(files)
 end
 % 
 % %% Plotting
-% addpath('C:\Users\JulioMedeiros\Desktop')
 % 
 % ECG=double(EEG.data(64,:));
 % plotscroll(ECG_signal,det_RS,ECG.srate,20)
