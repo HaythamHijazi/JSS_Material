@@ -1,8 +1,7 @@
 
 EEG.etc.eeglabvers = '14.1.2'; % this tracks which version of EEGLAB is being used, you may ignore it
 
-% cd('C:\\Users\\JulioMedeiros\\Desktop\\analysis\\importfiles\\triggers\\GA\\1000QRS\\')
-cd('C:\Users\JulioMedeiros\Desktop\analysis\importfiles\triggers\GA\1000QRS\problemas')
+cd('')
 path=pwd;
 
 files=dir('*.set');
@@ -13,13 +12,12 @@ for i=1:length(files)
     EEG = pop_loadset('filename',filename,'filepath',path);
     ECG=EEG;
     ECG.data=EEG.data(64,:);
-    save(string(strcat('C:\Users\JulioMedeiros\Desktop\ricardo\',filename(1:end-4),'.mat')),'ECG')
+    save(string(strcat('',filename(1:end-4),'.mat')),'ECG')
 end
 
 
 %%
-% cd('C:\\Users\\JulioMedeiros\\Desktop\\ECG\\')
-cd('C:\Users\JulioMedeiros\Desktop\analysis\importfiles\triggers\problemas\GA\1000QRS_Pan')
+cd(')
 path=pwd;
 
 files=dir('*.set');
@@ -30,5 +28,5 @@ for i=1:length(files)
     EEG = pop_loadset('filename',filename,'filepath',path);
     ECG=EEG;
     ECG.data=EEG.data(64,:);
-    save(string(strcat('C:\Users\JulioMedeiros\Desktop\ricardo\pantompkins\',filename(1:end-4),'.mat')),'ECG')
+    save(string(strcat('',filename(1:end-4),'.mat')),'ECG')
 end
