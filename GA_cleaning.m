@@ -1,4 +1,4 @@
-% EEGLAB history file generated on the 09-Jun-2020
+
 % ------------------------------------------------
 
 EEG.etc.eeglabvers = '14.1.2'; % this tracks which version of EEGLAB is being used, you may ignore it
@@ -8,8 +8,7 @@ factor=[2];
 ANC=[0];
 cont=0;
 
-% cd('D:\Data_study1\fmri free')
-% 
+
 % subject=dir('*');
 % subject=subject(3:end,:);
 % 
